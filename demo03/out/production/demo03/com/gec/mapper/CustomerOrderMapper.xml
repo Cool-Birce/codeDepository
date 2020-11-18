@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gec.mapper.CustomerOrderMapper">
+    <resultMap id="CustomerOrderMap" type="CustomerOrder">
+        <result property="id" column="id"></result>
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+        <result property="address" column="address"></result>
+        <result property="oid" column="oid"></result>
+        <result property="number" column="number"></result>
+        <result property="createtime" column="createtime"></result>
+        <result property="note" column="note"></result>
+    </resultMap>
+<select id="findAll" resultMap="CustomerOrderMap">
+    select u.*,o.id oid,o.number,o.createtime,o.note FROM user u,`order` o where u.id=o.user_id
+</select>
+    <select id="oneBymore" resultMap="CustomerOrderMap" parameterType="int">
+        SELECT * from user u RIGHT JOIN `order` o on u.id=o.user_id where u.id=#{id}
+    </select>
+</mapper>
