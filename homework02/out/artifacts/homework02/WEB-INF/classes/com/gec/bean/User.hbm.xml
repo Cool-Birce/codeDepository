@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gec.bean">
+    <class name="User" table="user">
+        <id name="id" column="ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="userName" column="USERNAME"></property>
+        <property name="userPassword" column="PASSWORD"></property>
+        <property name="userUrl" column="URL"></property>
+        <set name="cars" table="CAR" cascade="all" inverse="true">
+            <key column="u_id"></key>
+            <one-to-many class="Car"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

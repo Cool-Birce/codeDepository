@@ -1,0 +1,5 @@
+package com.gec.dao;
+
+public interface UserDao {
+
+}

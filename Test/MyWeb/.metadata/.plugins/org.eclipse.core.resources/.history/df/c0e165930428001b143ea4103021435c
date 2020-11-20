@@ -1,0 +1,5 @@
+package com.gec.service;
+
+public interface UserService {
+
+}

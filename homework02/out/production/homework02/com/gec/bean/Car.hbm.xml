@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.gec.bean">
+    <class name="Car" table="car">
+        <id name="carId" column="CAR_ID">
+            <generator class="native"></generator>
+        </id>
+        <property name="carName" column="CAR_NAME"></property>
+        <many-to-one name="user" class="User" column="u_id" cascade="all"></many-to-one>
+    </class>
+</hibernate-mapping>

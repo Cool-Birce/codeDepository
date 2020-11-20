@@ -1,0 +1,31 @@
+package com.gec.dao;
+
+
+import java.sql.ResultSet;
+import java.util.List;
+
+import com.gec.pojo.User;
+import com.gec.util.JDBCUtil;
+
+public class UserDaoImpl extends JDBCUtil<User> implements UserDao {
+	
+	
+
+	@Override
+	public User getEntity(ResultSet rs) throws Exception {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+
+	public List<User> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public User login(String name, String pwd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

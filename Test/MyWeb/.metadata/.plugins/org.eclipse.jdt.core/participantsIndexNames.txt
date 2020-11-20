@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+C:\Users\tonfaions\Desktop\JavaSE\Test\MyWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3056469697.index
+\shop-web\src\main\java
+C:\Users\tonfaions\Desktop\JavaSE\Test\MyWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\833971360.index
+\demo\src\main\java
+C:\Users\tonfaions\Desktop\JavaSE\Test\MyWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2758960808.index
+\shop-web\src\main\java
+C:\Users\tonfaions\Desktop\JavaSE\Test\MyWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1002079218.index
+\shop-web\src\main\java
+C:\Users\tonfaions\Desktop\JavaSE\Test\MyWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3301880445.index
+\shop-web\src\main\java
